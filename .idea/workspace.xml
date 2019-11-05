@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1db68bc-0dd3-4d9b-92d0-9cf97d47bc40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/em/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/em/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/em/MainFunctinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/em/MainFunctinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/em/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/em/Parameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/em/SubFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/em/SubFunction.java" afterDir="false" />
-    </list>
+    <list default="true" id="b1db68bc-0dd3-4d9b-92d0-9cf97d47bc40" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +27,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/em/Parameters.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="238">
-                      <caret line="14" column="32" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="32" />
+                    <state relative-caret-position="561">
+                      <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
                       <folding>
                         <element signature="e#451#452#0" expanded="true" />
                         <element signature="e#513#514#0" expanded="true" />
@@ -89,8 +84,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/em/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+                <state relative-caret-position="289">
+                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#2928#2944#0" expanded="true" />
@@ -232,7 +227,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="em.Main" />
+      <option name="MAIN_CLASS_NAME" value="Java.Main" />
       <module name="paper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,12 +249,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572937120707</updated>
-      <workItem from="1572937124072" duration="16051000" />
+      <workItem from="1572937124072" duration="16354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16051000" />
+    <option name="totallyTimeSpent" value="16354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2483" height="1456" extended-state="6" />
@@ -375,10 +370,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/em/MainFunctinos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#683#716#0" expanded="true" />
+            <element signature="e#812#828#0" expanded="true" />
+            <element signature="e#2707#2715#0" expanded="true" />
+            <element signature="e#3231#3239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/em/Parameters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="561">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#451#452#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
@@ -394,25 +403,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/em/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2928#2944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/em/MainFunctinos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#683#716#0" expanded="true" />
-            <element signature="e#812#828#0" expanded="true" />
-            <element signature="e#2707#2715#0" expanded="true" />
-            <element signature="e#3231#3239#0" expanded="true" />
           </folding>
         </state>
       </provider>
