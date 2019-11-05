@@ -7,7 +7,6 @@ import java.util.Random;
 
 public class SubFunction {
 
-    Parameters parameters = new Parameters();
 
     public ArrayList<String> totalCase(int destNum) {
         ArrayList<String> result = new ArrayList<String>();
@@ -34,11 +33,9 @@ public class SubFunction {
     }
 
 
-    public Double caseProb(String location, String noise) {
+    public Double caseProb(String location, String noise, double qValue, double pValue) {
         Random random = new Random();
         double result = 1.0;
-        double qValue = parameters.getqValue();
-        double pValue = parameters.getpValue();
 
         for (int i = 0; i < location.length(); i++) {
             double r = random.nextDouble();

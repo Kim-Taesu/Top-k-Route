@@ -2,18 +2,13 @@ package em;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class MainFunctinos {
 
     SubFunction subFunction = new SubFunction();
 
 
-    public HashMap<String, HashMap<String, Double>> locationProb(int destNum) {
-
-        System.out.println("\n==============================");
-        System.out.println("locationProb start");
-        System.out.println("==============================\nResult");
+    public HashMap<String, HashMap<String, Double>> locationProb(int destNum, double qValue, double pValue) {
 
         // 모든 경우의 변수
         ArrayList<String> cases = subFunction.totalCase(destNum);
@@ -29,55 +24,84 @@ public class MainFunctinos {
                 StringBuilder location = new StringBuilder(String.format("%0" + destNum + "d", 0));
                 location.setCharAt(i, '1');
 
-                tmp.put(location.toString(), subFunction.caseProb(location.toString(), c));
+                tmp.put(location.toString(), subFunction.caseProb(location.toString(), c, qValue, pValue));
             }
 
             caseProb.put(c, tmp);
         }
-
-
-        // print
-        Iterator<String> key = caseProb.keySet().iterator();
-        while (key.hasNext()) {
-            String k = key.next();
-            System.out.println("key is " + k);
-            System.out.println(caseProb.get(k));
-        }
-
-        System.out.println("\n==============================");
-        System.out.println("locationProb end");
-        System.out.println("==============================\n");
-
         return caseProb;
     }
 
-    public HashMap<Integer, HashMap<Integer, Double>> initTheta(int destNum) {
-        HashMap<Integer, HashMap<Integer, Double>> initTheta = new HashMap<Integer, HashMap<Integer, Double>>();
+    public ArrayList<String> dbRead() {
+        // DB Total
+        double dbTotal = 0.0;
 
-        System.out.println("\n==============================");
-        System.out.println("initTheta start");
-        System.out.println("==============================\nResult");
-
-        for (int i = 0; i < destNum; i++) {
-
-            HashMap<Integer, Double> tmp = new HashMap<Integer, Double>();
-            for (int j = 0; j < destNum; j++) {
-                tmp.put(j, 1 / Math.pow(destNum, 2));
-            }
-            initTheta.put(i, tmp);
-
-            // print
-            System.out.println(i);
-            System.out.println(tmp);
+        ArrayList<String> dbData = new ArrayList<String>();
+        for (int d = 0; d < dbTotal; d++) {
+            // DB data
+            String rlp = null;
+            String rlc = null;
+            String newLine = rlp + ":" + rlc;
+            dbData.add(newLine);
         }
+        return dbData;
+    }
 
-        System.out.println("\n==============================");
-        System.out.println("initTheta end");
-        System.out.println("==============================\n");
+    public ArrayList<Double> getDbProb(ArrayList<String> dbData,
+                                       HashMap<String, HashMap<String, Double>> locationProb,
+                                       String xA, String xB) {
+        ArrayList<Double> result = new ArrayList<Double>();
+        for (String line : dbData) {
+            String[] tmp = line.split(":");
+            // DB data Prob
+            double rlpProb = locationProb.get(tmp[0]).get(xA);
+            double rlcProb = locationProb.get(tmp[1]).get(xB);
+            result.add(rlpProb * rlcProb);
+        }
+        return result;
+    }
 
-        return initTheta;
+    public Double getTotalThetaTmp(int destNum, int a, int b,
+                                   HashMap<Integer, HashMap<Integer, Double>> theta) {
+
+        double totalThetaTmp = 0.0;
+        for (int q = 0; q < destNum; q++) {
+            for (int w = 0; w < destNum; w++) {
+
+                // 현재 출발지역과 이전지역이 같은 경우는 넘어간다. (Theta 값이 바뀌기 때문)
+                if (q == a && w == b) continue;
+                totalThetaTmp += theta.get(q).get(w);
+            }
+        }
+        return totalThetaTmp;
     }
 
 
+    public Double emAlgoritm(double curTheta, double nextTheta, double totalThetaTmp,
+                             ArrayList<Double> dbProb, double dbTotal, double threshold
+    ) {
+
+        while (true) {
+            double totalTheta = totalThetaTmp + curTheta;
+            // M-step
+            for (double rlProb : dbProb) {
+                // E-Step
+                double EResult = (curTheta * rlProb) / (totalTheta * rlProb);
+                nextTheta += EResult;
+            }
+            // MResult
+            nextTheta /= dbTotal;
+
+            // break 조건
+            if (Math.abs(nextTheta - curTheta) < threshold) break;
+
+            curTheta = nextTheta;
+            nextTheta = 0.0;
+
+            // Normalize
+        }
+
+        return nextTheta;
+    }
 
 }
