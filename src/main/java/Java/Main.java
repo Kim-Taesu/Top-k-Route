@@ -21,7 +21,6 @@ public class Main {
         double pValue = parameters.getpValue();
         System.out.println("\n");
         double[][] theta = functinos.initTheta(destNum);
-        double[][] preTheta = theta.clone();
         String[] noiseCases = functinos.noiseCases(destNum, (int) Math.pow(2, destNum));
         double[][] probNoiseOrigin = functinos.probNoiseOrigin(destNum, noiseCases, qValue, pValue);
 
@@ -41,12 +40,14 @@ public class Main {
 
         /** Iteration **/
         while (true) {
+            double[][] preTheta = new double[theta.length][theta[0].length];
             for (int i = 0; i < destNum; i++) {
                 for (int j = 0; j < destNum; j++) {
                     preTheta[i][j] = theta[i][j];
                 }
             }
 
+            double normalizeTmp = 0.0;
             for (int a = 0; a < destNum; a++) {
                 StringBuilder xA = new StringBuilder(String.format("%0" + destNum + "d", 0));
                 xA.setCharAt(a, '1');
@@ -107,9 +108,17 @@ public class Main {
                     System.out.println("\t\tM Step result : " + mStepResult);
 
                     theta[a][b] = mStepResult;
+                    normalizeTmp += mStepResult;
                 }
             }
             /** M Step end **/
+
+            /** Normalize **/
+            for (int a = 0; a < destNum; a++) {
+                for (int b = 0; b < destNum; b++) {
+                    theta[a][b]/=normalizeTmp;
+                }
+            }
 
             /** max( theta(t+1)[a][b] - theta(t)[a][b] ) **/
             System.out.println("\n\nTheta Value");
@@ -119,6 +128,7 @@ public class Main {
                 for (int b = 0; b < destNum; b++) {
                     System.out.println("a: " + a + ", b: " + b + ", theta: " + theta[a][b]);
                     tmp += theta[a][b];
+                    System.out.println(theta[a][b]+" || "+preTheta[a][b]);
 
                     double compareValue = Math.abs(theta[a][b] - preTheta[a][b]);
                     max = Math.max(max, compareValue);

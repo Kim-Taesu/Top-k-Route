@@ -10,7 +10,7 @@ public class Parameters {
 
     private int destNum = 5;
 
-    private double threshold = 0.00001;
+    private double threshold = 0.001;
 
     private String ip = "localhost";
     private int port = 27017;
