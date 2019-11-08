@@ -1,4 +1,4 @@
-package Java;
+package Java.Main;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
