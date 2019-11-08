@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b1db68bc-0dd3-4d9b-92d0-9cf97d47bc40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/DB/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/DB/DbFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java/DB/DbFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/DB/DbMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java/DB/DbMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/DB/DbSubFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/Functinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java/Main/Functinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java/Parameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java/DB/Config.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Java/DB/DbFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Java/DB/DbFunctions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Java/DB/DbMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Java/DB/DbMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java/DB/DbSubFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java/Parameters.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +24,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Java/Main/Functinos.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="-893">
                   <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -44,11 +33,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Java/DB/DbFunctions.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="688">
-                  <caret line="153" column="26" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+                <state relative-caret-position="2244">
+                  <caret line="134" selection-start-line="134" selection-end-line="134" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#4374#4375#0" expanded="true" />
@@ -58,15 +47,39 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Java/Config/Config.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                  <folding>
+                    <element signature="e#1100#1101#0" expanded="true" />
+                    <element signature="e#1143#1144#0" expanded="true" />
+                    <element signature="e#2075#2076#0" expanded="true" />
+                    <element signature="e#2112#2113#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Java/Main/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+                <state relative-caret-position="263">
+                  <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -77,27 +90,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Java/DB/DbMain.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+                <state relative-caret-position="476">
+                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Java/Config/Config.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1173">
-                  <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#961#962#0" expanded="true" />
-                    <element signature="e#1003#1004#0" expanded="true" />
-                    <element signature="e#1100#1101#0" expanded="true" />
-                    <element signature="e#1143#1144#0" expanded="true" />
-                    <element signature="e#2075#2076#0" expanded="true" />
-                    <element signature="e#2112#2113#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -188,9 +184,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Java/DB/DbConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java/Parameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Java/DB/DbFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java/Config/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java/DB/DbMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Java/DB/DbFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java/Main/Main.java" />
       </list>
     </option>
@@ -203,7 +199,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-42" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="2483" />
     <option name="height" value="1456" />
@@ -382,7 +378,7 @@
       <updated>1572937120707</updated>
       <workItem from="1572937124072" duration="34181000" />
       <workItem from="1573103836568" duration="14312000" />
-      <workItem from="1573188452403" duration="7854000" />
+      <workItem from="1573188452403" duration="8134000" />
     </task>
     <task id="LOCAL-00001" summary="DB 패키지 생성">
       <created>1572956186156</created>
@@ -405,17 +401,24 @@
       <option name="project" value="LOCAL" />
       <updated>1573120405819</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="패키지 구조 설정, Config 파일 통합">
+      <created>1573196586371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573196586371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56347000" />
+    <option name="totallyTimeSpent" value="56627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2483" height="1456" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111019395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.111019395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -424,7 +427,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290469" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31316188" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31316188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -486,20 +489,14 @@
     <MESSAGE value="DB 패키지 생성" />
     <MESSAGE value="함수 정리 및 함수 주석 생성" />
     <MESSAGE value="Main 클래스, Functions 클래스 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main 클래스, Functions 클래스 수정" />
+    <MESSAGE value="패키지 구조 설정, Config 파일 통합" />
+    <option name="LAST_COMMIT_MESSAGE" value="패키지 구조 설정, Config 파일 통합" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/em/subFunction/CombinationGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/em/subFunction/totalCase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/em/Result.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/DB/dbRead.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -547,7 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Java/Main/Functinos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="-893">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -557,8 +554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Java/DB/DbFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="153" column="26" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+        <state relative-caret-position="2244">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4374#4375#0" expanded="true" />
@@ -567,38 +564,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java/Main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Java/Config/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#2075#2076#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Java/DB/DbMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java/Config/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Java/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state relative-caret-position="263">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding>
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
