@@ -13,6 +13,7 @@ public class Main {
 
     public static void main(String args[]) {
 
+
         /** 필요 객체 생성 **/
         Functinos functinos = new Functinos();
         Config config = new Config();
@@ -25,7 +26,8 @@ public class Main {
         double qValue = config.getqValue();
         double pValue = config.getpValue();
         double[][] theta = functinos.initTheta(destNum);
-        String[] noiseCases = functinos.noiseCases(destNum, (int) Math.pow(2, destNum));
+        String[] noiseCases = functinos.noiseCases(destNum);
+
         double[][] probNoiseOrigin = functinos.probNoiseOrigin(destNum, noiseCases, qValue, pValue);
         double[][] result = new double[destNum][destNum];
         int iterationCount = 0;

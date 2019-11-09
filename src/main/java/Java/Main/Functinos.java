@@ -6,30 +6,25 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
+import java.math.BigInteger;
 import java.util.*;
 
 public class Functinos {
 
-    public String[] noiseCases(int destNum, int total) {
-        String[] result = new String[total];
-        int index = 0;
+    public String[] noiseCases(int destNum) {
+        BigInteger last = new BigInteger(String.valueOf(1 << destNum));
+        String[] result = new String[last.intValue()];
+        BigInteger start = BigInteger.ZERO;
 
-        Queue<String> queue = new LinkedList<String>();
-        queue.add("");
-        while (!queue.isEmpty()) {
-            String cur = queue.poll();
-
-            // 다 채워짐
-            if (cur.length() == destNum)
-                result[index++] = cur;
-
-                // 다 안채워짐
-            else {
-                queue.offer(cur + '0');
-                queue.offer(cur + '1');
+        for (; start.compareTo(last) != 1 & start.compareTo(last)!=0; start = start.add(BigInteger.ONE)) {
+            String a = start.toString(2);
+            String tmp = "";
+            if (a.length()<destNum){
+                for(int i=a.length();i<destNum;i++)
+                    tmp+="0";
             }
+            result[start.intValue()]=tmp+a;
         }
-
         return result;
     }
 
@@ -86,8 +81,21 @@ public class Functinos {
 
 
     public double[][] probNoiseOrigin(int destNum, String[] noiseCases, double qValue, double pValue) {
-        double[][] result = new double[noiseCases.length][destNum];
 
+
+//        BigInteger last = new BigInteger(String.valueOf((1 << destNum) -1));
+//        double[][] result = new double[noiseCases.length][destNum];
+//
+//        for (int noiseNum=0;noiseNum<last.intValue();noiseNum++) {
+//            String noise = noiseCases[noiseNum];
+//            for (int originNum = 0; originNum < destNum; originNum++) {
+//                StringBuilder origin = new StringBuilder(String.format("%0" + destNum + "d", 0));
+//                origin.setCharAt(originNum, '1');
+//                result[noiseNum][originNum] = caseProb(origin.toString(), noise, qValue, pValue);
+//            }
+//        }
+
+        double[][] result = new double[noiseCases.length][destNum];
         for (String noise : noiseCases) {
             int x = Integer.parseInt(noise, 2);
 

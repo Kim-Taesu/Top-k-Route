@@ -2,7 +2,7 @@ package Java.Config;
 
 public class Config {
 
-    private double threshold = 0.001;
+    private double threshold = 0.0001;
     private String ip = "localhost";
     private int port = 27017;
     private String dbName = "taxiDB";
@@ -13,8 +13,8 @@ public class Config {
 
     //    private String filePath = "C:\\Users\\Kim-Taesu\\Downloads\\TaxiMach_Link_Dataset_Full_201512\\TaxiMach_Link_Dataset_Full_201501.txt";
     private String filePath = "C:\\Users\\Kim-Taesu\\Desktop\\taxiData.csv";
-    private int destNum = 6;
-    private double epslion = 1.0;
+    private int destNum = 5;
+    private double epslion = 10.0;
     private double qValue = 1.0 / (Math.exp(epslion) + 1);
     private double pValue = 0.5;
     private String[] sigunguList = {"1111", "1114", "1117", "1120", "1121", "1123", "1126", "1129", "1130", "1132", "1135", "1138", "1141", "1144", "1147", "1150", "1153", "1154", "1156", "1159", "1162", "1165", "1168", "1171", "1174"};
