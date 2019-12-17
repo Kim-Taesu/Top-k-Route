@@ -2,82 +2,109 @@ package Java.Config;
 
 public class Config {
 
-    private double threshold = 0.0001;
-    private String ip = "localhost";
-    private int port = 27017;
-    private String dbName = "taxiDB";
-    private String collectionTaxi = "taxiCollection";
-    private String collectionProbNoise= "provNoise";
-    private String collectionProbOrigin= "provOrigin";
+  private static Config config = new Config();
+
+  private Config() {
+    /** init variables **/
+    ip = "localhost";
+    port = 27017;
+    dbName = "Taxi_DB";
+    taxiColl = "Noise_Taxi_Data";
+    testColl = "Test_Noise_Taxi_Data";
+    noiseDataProbColl = "Noise_Taxi_Data_Prob";
+    collectionProbOrigin = "provOrigin";
+
+    filePath = "C:\\Users\\Kim-Taesu\\Downloads\\TaxiMach_Link_Dataset_Full_201512\\TaxiMach_Link_Dataset_Full_201501.txt";
+//        filePath = "C:\\Users\\Kim-Taesu\\Desktop\\taxiData.csv";
+    destNum = 4;
+    epsilon = 1;
+    qValue = 1.0 / (Math.exp(epsilon) + 1);
+    pValue = 0.5;
+    destCodeList = new String[]{
+        "1111", "1114", "1117", "1120", "1121",
+        "1123", "1126", "1129", "1130", "1132",
+        "1135", "1138", "1141", "1144", "1147",
+        "1150", "1153", "1154", "1156", "1159",
+        "1162", "1165", "1168", "1171", "1174"
+    };
+    samplingNum = 100000;
+    threshold = 0.000001;
+  }
+
+  /**
+   * get instance
+   **/
+
+  public static Config getInstance() {
+    return config;
+  }
 
 
-    //    private String filePath = "C:\\Users\\Kim-Taesu\\Downloads\\TaxiMach_Link_Dataset_Full_201512\\TaxiMach_Link_Dataset_Full_201501.txt";
-    private String filePath = "C:\\Users\\Kim-Taesu\\Desktop\\taxiData.csv";
-    private int destNum = 5;
-    private double epslion = 10.0;
-    private double qValue = 1.0 / (Math.exp(epslion) + 1);
-    private double pValue = 0.5;
-    private String[] sigunguList = {"1111", "1114", "1117", "1120", "1121", "1123", "1126", "1129", "1130", "1132", "1135", "1138", "1141", "1144", "1147", "1150", "1153", "1154", "1156", "1159", "1162", "1165", "1168", "1171", "1174"};
+  /**
+   * Variables
+   **/
+  private double threshold;
+  private String ip;
+  private int port;
+  private String dbName;
+  private String taxiColl;
+  private String testColl;
+  private String noiseDataProbColl;
+  private String collectionProbOrigin;
+  private String filePath;
+  private int destNum;
+  private double epsilon;
+  private double qValue;
+  private double pValue;
+  private String[] destCodeList;
+  private int samplingNum;
 
 
-    public String getCollectionProbNoise() {
-        return collectionProbNoise;
-    }
+  /**
+   * Getter
+   **/
 
-    public String getCollectionProbOrigin() {
-        return collectionProbOrigin;
-    }
+  public double getEpsilon() {
+    return epsilon;
+  }
 
-    public String[] getSigunguList() {
-        System.out.print("sigunguList : ");
-        for(String sigungu : sigunguList) System.out.printf("%s ",sigungu);
-        System.out.println();
-        return sigunguList;
-    }
+  public int getSamplingNum() {
+    return samplingNum;
+  }
 
-    public double getpValue() {
-        System.out.println("pValue : " + pValue);
-        return pValue;
-    }
+  public String getTestColl() {
+    return testColl;
+  }
 
-    public double getqValue() {
-        System.out.println("qValue : " + qValue);
-        return qValue;
-    }
+  public String getNoiseDataProbColl() {
+    return noiseDataProbColl;
+  }
 
-    public String getFilePath() {
-        System.out.println("filePath : " + filePath);
-        return filePath;
-    }
+  public double getpValue() {
+    return pValue;
+  }
 
-    // getter
-    public String getIp() {
-        System.out.println("ip : " + ip);
-        return ip;
-    }
+  public double getqValue() {
+    return qValue;
+  }
 
-    public int getPort() {
-        System.out.println("port : " + port);
-        return port;
-    }
+  public String getIp() {
+    return ip;
+  }
 
-    public String getDbName() {
-        System.out.println("dbName : " + dbName);
-        return dbName;
-    }
+  public int getPort() {
+    return port;
+  }
 
-    public String getCollectionTaxi() {
-        return collectionTaxi;
-    }
+  public String getDbName() {
+    return dbName;
+  }
 
-    public int getDestNum() {
-        System.out.println("destNum : " + destNum);
-        return destNum;
-    }
+  public int getDestNum() {
+    return destNum;
+  }
 
-
-    public double getThreshold() {
-        System.out.println("threshold : " + threshold);
-        return threshold;
-    }
+  public double getThreshold() {
+    return threshold;
+  }
 }
